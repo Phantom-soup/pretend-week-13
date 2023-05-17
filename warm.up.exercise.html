@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warmup</title>
+</head>
+<body>
+    <script>
+        var userstring = prompt("Choose a number that is between 1 and 3");
+        var usernum = parseInt(userstring, 10);
+
+        while (usernum > 3 || usernum < 1) {
+            // statement for when termination is NOT true, keep the loop going...
+            //constantly looking at user input until the right condition is met
+            console.log(usernum + " Not a numer I'm looking for")
+            userstring = prompt(usernum + " Not a WHOLE number between 1-3");
+            usernum = parseInt(userstring, 10);
+            // Keep prompting the user until they enter the desired type of number.
+        }
+
+        if(usernum = 3){
+            console.log("You will fall under a long rest soon");
+        }else if(usernum = 2){
+            console.log("You will have goodluck today, test it");
+        }else if(usernum = 1){
+            console.log("Your luck isn't going to look good, try to stay indoors");
+        }
+    </script>
+</body>
+</html>
